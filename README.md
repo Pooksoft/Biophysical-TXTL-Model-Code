@@ -38,7 +38,7 @@ In the ``src`` directory there are two subdirectories ``P70-deGFP-model`` and ``
 the code for the P70-deGFP model and the P28 negative feedback model.
 
 ### Scripts
-Each model subdirectory contains scripts to solve or analyze the model equations
+Each model subdirectory contains scripts to solve or analyze the model equations:
 
 Script | Description
 ---: | ---
