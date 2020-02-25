@@ -25,6 +25,7 @@ Package | Description
 [POETs.jl](https://github.com/varnerlab/POETs.jl) | A Julia package that implements the Pareto Optimal Ensemble Techniques (POETs) method for multiobjective optimization
 
 These packages will be installed and compiled the first time you execute the model code (which can take a bit).
+If this doesn't happen, you can always install them using the [Julia package manager](https://docs.julialang.org/en/v1/stdlib/Pkg/index.html).
 To get the model codes, you can download the model repository as a zip file, clone or pull it using the command:
 
 	git pull https://github.com/varnerlab/Biophysical-TXTL-Model-Code
