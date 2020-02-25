@@ -8,20 +8,30 @@ bioRxiv 139774; doi: https://doi.org/10.1101/139774](https://www.biorxiv.org/con
 
 
 ### Installation and Requirements
-[Julia](https://www.julialang.org) v1.3 or greater must be installed on your machine. In addition, solution and
+[Julia](https://www.julialang.org) v1.3 or greater must be installed on your machine. In addition, the solution and
 analysis of the effective TX/TL models require a few additional packages:
 
 Package | Description
 --- | ---
-[DifferentialEquations.jl](https://github.com/JuliaDiffEq/DifferentialEquations.jl) | a suite for numerically solving differential equations written in Julia and available for use in Julia, Python, and R
-[DiffEqSensitivity.jl](https://github.com/JuliaDiffEq/DiffEqSensitivity.jl) | encodes sensitivity analysis utilities
-[JSON.jl](https://github.com/JuliaIO/JSON.jl) | package for parsing and printing JSON
+[DifferentialEquations.jl](https://github.com/JuliaDiffEq/DifferentialEquations.jl) | A suite for numerically solving differential equations written in Julia and available for use in Julia, Python, and R
+[DiffEqSensitivity.jl](https://github.com/JuliaDiffEq/DiffEqSensitivity.jl) | Encodes sensitivity analysis utilities
+[JSON.jl](https://github.com/JuliaIO/JSON.jl) | Package for parsing and printing JSON
+[Optim.jl](https://github.com/JuliaNLSolvers/Optim.jl) | Univariate and multivariate optimization solvers
+[DataFrames.jl](https://github.com/JuliaData/DataFrames.jl) | Tools for working with tabular data in Julia
+[CSV.jl](https://github.com/JuliaData/CSV.jl) | Package for working with delimited files
+[Interpolations.jl](https://github.com/JuliaMath/Interpolations.jl) | Package implements a variety of interpolation schemes for the Julia language
+[Distributions.jl](https://github.com/JuliaStats/Distributions.jl) | A Julia package for probability distributions and associated functions
+[PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl) | Julia interface to the [Matplotlib](https://matplotlib.org) plotting library from Python
+[POETs.jl](https://github.com/varnerlab/POETs.jl) | A Julia package that implements the Pareto Optimal Ensemble Techniques (POETs) method for multiobjective optimization
 
-
-You can download the model repository as a zip file, clone or pull it using the command:
+These packages will be installed and compiled the first time you execute the model code (which can take a bit).
+To get the model codes, you can download the model repository as a zip file, clone or pull it using the command:
 
 	git pull https://github.com/varnerlab/Biophysical-TXTL-Model-Code
 
 or
 
 	git clone https://github.com/varnerlab/Biophysical-TXTL-Model-Code
+
+In the ``src`` directory there are two subdirectories ``P70-deGFP-model`` and ``P28-cIssrA-model`` which contain
+the code for the P70-deGFP model and the P28 negative feedback model. 

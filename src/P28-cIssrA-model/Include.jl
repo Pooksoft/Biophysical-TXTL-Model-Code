@@ -78,6 +78,11 @@ if (in("Distributions",installed_package_set) == false)
     Pkg.add("Distributions")
 end
 
+if (in("POETs",installed_package_set) == false)
+    Pkg.add("https://github.com/varnerlab/POETs.jl")
+end
+
+
 # includes - packages
 using DifferentialEquations
 using DiffEqSensitivity

@@ -81,6 +81,10 @@ if (in("PyPlot",installed_package_set) == false)
     Pkg.add("PyPlot")
 end
 
+if (in("POETs",installed_package_set) == false)
+    Pkg.add("https://github.com/varnerlab/POETs.jl")
+end
+
 # Ok to use now ...
 using DifferentialEquations
 using DelimitedFiles
