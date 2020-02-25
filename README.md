@@ -12,7 +12,7 @@ bioRxiv 139774; doi: https://doi.org/10.1101/139774](https://www.biorxiv.org/con
 analysis of the effective TX/TL models require a few additional packages:
 
 Package | Description
---- | ---
+---: | ---
 [DifferentialEquations.jl](https://github.com/JuliaDiffEq/DifferentialEquations.jl) | A suite for numerically solving differential equations written in Julia and available for use in Julia, Python, and R
 [DiffEqSensitivity.jl](https://github.com/JuliaDiffEq/DiffEqSensitivity.jl) | Encodes sensitivity analysis utilities
 [JSON.jl](https://github.com/JuliaIO/JSON.jl) | Package for parsing and printing JSON
@@ -34,4 +34,4 @@ or
 	git clone https://github.com/varnerlab/Biophysical-TXTL-Model-Code
 
 In the ``src`` directory there are two subdirectories ``P70-deGFP-model`` and ``P28-cIssrA-model`` which contain
-the code for the P70-deGFP model and the P28 negative feedback model. 
+the code for the P70-deGFP model and the P28 negative feedback model.
