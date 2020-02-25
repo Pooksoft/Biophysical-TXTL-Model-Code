@@ -91,9 +91,9 @@ using DataFrames
 using CSV
 using Interpolations
 using PyPlot
-using POETs
 using NumericalIntegration
 using DiffEqSensitivity
 
-# List any custom includes here ...
-# ...
+# custom include -
+# POETs is available from: https://github.com/varnerlab/POETs.jl
+using POETs

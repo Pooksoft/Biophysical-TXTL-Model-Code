@@ -22,6 +22,62 @@
 # THE SOFTWARE.
 # ----------------------------------------------------------------------------------- #
 
+# system packages - these are required to be installed -
+# check - if they are installed, all is good with the world.
+# if not then install them
+using LinearAlgebra # pre-installed w/Julia
+using Statistics    # pre-installed w/Julia
+using Pkg           # pre-installed w/Julia
+installed_package_set = keys(Pkg.installed())
+
+# Do we have DifferentialEquations?
+if (in("DifferentialEquations",installed_package_set) == false)
+    Pkg.add("DifferentialEquations")
+end
+
+# Do we have DelimitedFiles?
+if (in("DelimitedFiles",installed_package_set) == false)
+    Pkg.add("DelimitedFiles")
+end
+
+if (in("DiffEqSensitivity",installed_package_set) == false)
+    Pkg.add("DiffEqSensitivity")
+end
+
+# Do we have JSON?
+if (in("JSON",installed_package_set) == false)
+    Pkg.add("JSON")
+end
+
+# Do we have ProgressMeter?
+if (in("ProgressMeter",installed_package_set) == false)
+    Pkg.add("ProgressMeter")
+end
+
+if (in("Optim",installed_package_set) == false)
+    Pkg.add("Optim")
+end
+
+if (in("DataFrames",installed_package_set) == false)
+    Pkg.add("DataFrames")
+end
+
+if (in("CSV",installed_package_set) == false)
+    Pkg.add("CSV")
+end
+
+if (in("Interpolations",installed_package_set) == false)
+    Pkg.add("Interpolations")
+end
+
+if (in("PyPlot",installed_package_set) == false)
+    Pkg.add("PyPlot")
+end
+
+if (in("Distributions",installed_package_set) == false)
+    Pkg.add("Distributions")
+end
+
 # includes - packages
 using DifferentialEquations
 using DiffEqSensitivity
@@ -35,8 +91,10 @@ using CSV
 using Interpolations
 using PyPlot
 using Distributions
-using LatinHypercubeSampling
-using NumericalIntegration
+
+# custom include -
+# POETs is available from: https://github.com/varnerlab/POETs.jl
+using POETs
 
 # includes (my code) -
 include("Types.jl")
@@ -47,5 +105,4 @@ include("Data.jl")
 include("SolveBalances.jl")
 include("Balances.jl")
 include("Utility.jl")
-include("Discrete.jl")
 include("Error.jl")
