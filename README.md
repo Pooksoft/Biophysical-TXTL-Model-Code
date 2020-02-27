@@ -4,7 +4,7 @@
 This repository contains code for effective synthetic circuit models written in the [Julia](https://www.julialang.org) programming language. The synthetic circuits and model equations are described in the publication:
 
 [Adhikari et al (2020) Effective Biophysical Modeling of Cell Free Transcription and Translation Processes
-bioRxiv 139774; doi: https://doi.org/10.1101/139774](https://www.biorxiv.org/content/10.1101/2020.02.25.964841v1)
+bioRxiv 2020.02.25.964841; doi: https://doi.org/10.1101/2020.02.25.964841](https://www.biorxiv.org/content/10.1101/2020.02.25.964841v1)
 
 
 ### Installation and Requirements
